@@ -1,0 +1,36 @@
+EdgeLite OS - Build Instructions
+
+Target Platform:
+QEMU x86-64
+
+Build System:
+Buildroot 2026.08.1
+
+Requirements:
+- Ubuntu Linux or Ubuntu WSL2
+- GCC and standard build tools
+- Make
+- Git
+- QEMU x86-64
+
+Project Structure:
+- configs/: Buildroot configuration
+- scripts/: Build script
+- source/: Custom package and root filesystem overlay
+- images/: Generated kernel and root filesystem
+
+Build:
+From the EdgeLite-OS project root, execute:
+
+    ./scripts/build.sh
+
+Generated Images:
+    buildroot-2026.08.1/output/images/bzImage
+    buildroot-2026.08.1/output/images/rootfs.squashfs
+
+Run:
+    cd buildroot-2026.08.1/output/images
+    ./start-qemu.sh
+
+The system boots into EdgeLite OS and automatically
+runs the digit inference demonstration.

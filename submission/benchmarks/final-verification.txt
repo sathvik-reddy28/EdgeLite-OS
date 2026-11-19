@@ -1,0 +1,32 @@
+EdgeLite OS - Final Verification
+
+Environment: QEMU x86-64
+Hostname: EdgeLite
+
+Filesystem:
+Root: SquashFS (read-only)
+Writable Overlay: /etc (OverlayFS)
+
+Application:
+Executable: /usr/bin/digit_inference
+Binary Size: 13.9 KB
+
+Memory:
+Total RAM: 110 MB
+Used RAM: 10 MB
+Free RAM: 95 MB
+Available RAM: 95 MB
+
+Security:
+kernel.kptr_restrict = 2
+kernel.dmesg_restrict = 1
+kernel.randomize_va_space = 2
+
+Result:
+System booted successfully.
+Read-only root and writable overlay verified.
+Inference executable verified.
+All three kernel hardening settings verified.
+
+Note:
+QEMU reported an unstable TSC clocksource and switched to HPET.

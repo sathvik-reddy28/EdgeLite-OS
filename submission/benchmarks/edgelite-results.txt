@@ -1,0 +1,30 @@
+EdgeLite OS - Performance Results
+
+Kernel Image: 6.0 MB
+SquashFS Root Filesystem: 2.8 MB
+Buildroot Target Directory: 6.0 MB
+
+Total RAM: 110 MB
+Used RAM: 10 MB
+Free RAM: 96 MB
+Available RAM: 96 MB
+
+System Uptime at Measurement: 24.21 seconds
+
+Automatic Digit Inference: Successful
+Predicted Digit for Zero Input: 4
+Read-only Root Filesystem: Verified
+Writable Overlay: Verified
+Kernel Hardening: Verified
+
+Inference Benchmark:
+Iterations: 100000
+Total CPU Time: 534.674 ms
+Average Inference Latency: 0.005347 ms (5.347 microseconds)
+Last Predicted Digit: 1
+Result Checksum: 381987
+Environment: QEMU x86-64
+
+QEMU Timing:
+Launch-to-shutdown elapsed time: 27 seconds
+Note: Includes QEMU startup, guest operation and shutdown; not pure OS boot time.

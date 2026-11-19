@@ -1,0 +1,15 @@
+#!/bin/sh
+
+case "$1" in
+    start)
+        echo ""
+        echo "===== EdgeLite ML Inference ====="
+        /usr/bin/digit_inference --demo
+        echo "===== Inference Demo Complete ====="
+        echo ""
+        ;;
+    stop)
+        ;;
+esac
+
+exit 0

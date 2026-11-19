@@ -1,0 +1,22 @@
+# Buildroot generated files
+buildroot-2026.08.1/output/
+buildroot-2026.08.1/dl/
+buildroot-2026.08.1/host/
+buildroot-2026.08.1/staging/
+buildroot-2026.08.1/target/
+
+# Python environments and cache
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.log
+*~
+
+# IDE settings
+.vscode/
+.idea/

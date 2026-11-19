@@ -1,0 +1,5 @@
+config BR2_PACKAGE_DIGIT_INFERENCE
+    bool "digit-inference"
+    help
+      Lightweight handwritten digit recognition application
+      using a Logistic Regression model.

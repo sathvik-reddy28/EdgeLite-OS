@@ -1,0 +1,22 @@
+EdgeLite OS - ML Inference Validation
+
+Dataset: Scikit-learn Digits
+Total samples: 1797
+Training samples: 1437
+Testing samples: 360
+
+Model: Logistic Regression
+Solver: LBFGS
+Maximum iterations: 2000
+
+Python accuracy: 95.83%
+C accuracy: 95.83%
+
+Matching predictions: 360
+Mismatching predictions: 0
+
+C vs Python agreement: 100%
+
+Inference implementation: Native C
+Target architecture: x86-64
+Deployment: Buildroot + QEMU	

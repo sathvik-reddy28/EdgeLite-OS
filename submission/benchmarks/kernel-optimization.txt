@@ -1,0 +1,26 @@
+EdgeLite OS - Kernel Optimization
+
+Kernel version: 6.18.7
+Architecture: x86-64
+Build system: Buildroot 2026.08.1
+
+Before optimization:
+Kernel image: 6.4 MB
+
+After disabling sound support:
+Kernel image: 6.2 MB
+
+Approximate reduction: 3.1%
+
+Filesystem:
+EXT4 support: Enabled
+Sound support: Disabled
+VirtIO block: Enabled
+VirtIO PCI: Enabled
+
+Validation:
+QEMU boot: Successful
+Hostname: EdgeLite
+Root filesystem mount: Successful
+ML executable: Present
+Inference execution: Successful

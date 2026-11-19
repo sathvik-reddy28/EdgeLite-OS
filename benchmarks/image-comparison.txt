@@ -1,0 +1,24 @@
+EdgeLite OS - Root Filesystem Comparison
+
+Reference: Original, unoptimized Buildroot configuration
+Optimized system: EdgeLite OS
+
+Filesystem format: EXT2
+
+Original root filesystem: 60 MB
+EdgeLite root filesystem: 20 MB
+
+Size reduction: 66.67%
+
+Additional EdgeLite compressed image:
+SquashFS: 2.8 MB
+
+Kernel:
+Original: 6.4 MB
+EdgeLite: 6.0 MB
+
+Note:
+The 66.67% reduction is measured against the original Buildroot
+EXT2 image, not a mainstream Linux distribution.
+The 2.8 MB SquashFS image uses a different filesystem format
+and is reported separately.
